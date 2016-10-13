@@ -6,9 +6,7 @@ var path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
-
-app.get('/dashboard',function(req,res) {
+app.get('/',function(req,res) {
 	res.sendFile(__dirname + "/assignment CS 305.html");
 });
 
